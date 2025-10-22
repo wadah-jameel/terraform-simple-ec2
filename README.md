@@ -354,10 +354,11 @@ terraform destroy
 ####   ✅ Simple web page showing "Hello from my Terraform server!"
 
 
-#### Total AWS resources created: 2 (1 EC2 instance + 1 Security Group)
-#### Estimated monthly cost: ~$8-10 (if running 24/7 with t2.micro)
 
-#### This is the simplest possible setup to get a web server running with Terraform! 🎉
+##### Total AWS resources created: 2 (1 EC2 instance + 1 Security Group)
+##### Estimated monthly cost: ~$8-10 (if running 24/7 with t2.micro)
+
+##### This is the simplest possible setup to get a web server running with Terraform! 🎉
 
 
 
