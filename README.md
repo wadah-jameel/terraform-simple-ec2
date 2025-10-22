@@ -257,7 +257,7 @@ provider "aws" {
   region = var.aws_region
 }
 ```
-### What it does: "Hey Terraform, we want to use AWS, and deploy in this region"
+#### What it does: "Hey Terraform, we want to use AWS, and deploy in this region"
 
 ### 2. Data Source
 ```bash
@@ -266,7 +266,7 @@ data "aws_ami" "amazon_linux" {
   # ...
 }
 ```
-### What it does: "Find me the newest Amazon Linux server image to use"
+#### What it does: "Find me the newest Amazon Linux server image to use"
 
 ### 3. Security Group
 ```bash
@@ -275,7 +275,7 @@ resource "aws_security_group" "web_sg" {
 }
 ```
 
-### What it does: "Create firewall rules: allow SSH (port 22) and web traffic (port 80)"
+#### What it does: "Create firewall rules: allow SSH (port 22) and web traffic (port 80)"
 
 ### 4. EC2 Instance
 ```bash
@@ -286,7 +286,7 @@ resource "aws_instance" "web_server" {
 }
 ```
 
-### What it does: "Create a server using that image, make it this size, apply those firewall rules"
+#### What it does: "Create a server using that image, make it this size, apply those firewall rules"
 
 ### 5. User Data Script
 ```bash
@@ -296,7 +296,7 @@ yum install -y httpd
 systemctl start httpd
 ```
 
-### What it does: "When the server starts, update it and install a web server"
+#### What it does: "When the server starts, update it and install a web server"
 
 
 ## 🔧 Common Customizations
@@ -345,13 +345,13 @@ terraform destroy
 
 ## 📊 What You Get
 
-## After running this code:
+### After running this code:
 
-###   ✅ 1 Web Server running Amazon Linux
-###   ✅ Apache web server installed and running
-###   ✅ Security group allowing web and SSH access
-###   ✅ Public IP address to access your server
-###   ✅ Simple web page showing "Hello from my Terraform server!"
+####   ✅ 1 Web Server running Amazon Linux
+####   ✅ Apache web server installed and running
+####   ✅ Security group allowing web and SSH access
+####   ✅ Public IP address to access your server
+####   ✅ Simple web page showing "Hello from my Terraform server!"
 
 
 ### Total AWS resources created: 2 (1 EC2 instance + 1 Security Group)
