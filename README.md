@@ -1,4 +1,4 @@
-# Simple Terraform Code to Deploy EC2 - Beginner's Explanation
+# Simple Terraform Code to Deploy EC2
 
 ## 🎯 What We're Building
 
